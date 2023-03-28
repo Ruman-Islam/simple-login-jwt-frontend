@@ -14,7 +14,7 @@ const Login = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const rawResponse = await fetch("http://localhost:5000/api/user/login", {
+    const rawResponse = await fetch("https://simple-login-jwt-backend.vercel.app/api/user/login", {
       method: "POST",
       headers: {
         Accept: "application/json",

@@ -14,7 +14,7 @@ const Setting = () => {
       return alert("Password is missing");
     } else {
       const rawResponse = await fetch(
-        "http://localhost:5000/api/user/update_info",
+        "https://simple-login-jwt-backend.vercel.app/api/user/update_info",
         {
           method: "POST",
           headers: {

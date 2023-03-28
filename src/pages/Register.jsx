@@ -26,7 +26,7 @@ const Register = () => {
       return alert("Confirm password doesn't match");
     } else {
       const rawResponse = await fetch(
-        "http://localhost:5000/api/user/register",
+        "https://simple-login-jwt-backend.vercel.app/api/user/register",
         {
           method: "POST",
           headers: {
